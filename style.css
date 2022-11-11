@@ -1,0 +1,58 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--grayish-blue);
+  background-color: var(--light-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+.text-muted {
+  color: var(--grayish-blue);
+  font-weight: 200;
+}
+
+.border-top {
+  border-top-width: 0.25rem !important;
+}
+
+.border-red {
+  border-color: var(--red) !important;
+}
+
+.border-cyan {
+  border-color: var(--cyan) !important;
+}
+
+.border-orange {
+  border-color: var(--orange) !important;
+}
+
+.border-blue {
+  border-color: var(--blue) !important;
+}
+
+.card {
+  font-size: 0.9375rem;
+}
