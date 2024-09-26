@@ -2,94 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Four card feature section</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Four card feature section</title>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
-  <div class="container">
+<body class="text-[15px] leading-[25px] tracking-[.1px] text-neutral-900 bg-neutral-100">
+<div class="flex flex-col px-8 pt-[85px] pb-[78px] gap-[76px] items-center justify-center min-h-screen">
+    <header class="flex flex-col text-center gap-4 tracking-[.17px] max-w-[540px]">
+        <div class="flex flex-col gap-px text-2xl">
+            <h2 class="font-light">Reliable, efficient delivery</h2>
+            <h1 class="font-semibold">Powered by Technology</h1>
+        </div>
+        <p class="opacity-50">
+            Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is
+            successful
+        </p>
+    </header>
 
-    <article class="row text-center my-5">
-      <div class="col">
-        <h1 class="text-muted mb-1">Reliable, efficient delivery</h1>
-        <h1 class="mb-3">Powered by Technology</h1>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <p>
-              Our Artificial Intelligence powered tools use millions of project data points to ensure that your project
-              is successful
-            </p>
-          </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-[25px]">
+
+        <div class="flex justify-center items-center">
+            <div class="bg-white rounded-lg border-t-4 border-cyan p-7 shadow-card max-w-[300px]">
+                <h3 class="font-semibold text-[20px] mb-px">Supervisor</h3>
+                <p class="text-[13px] leading-[23px] tracking-[.09px] opacity-50 mb-[33px]">
+                    Monitors activity to identify project roadblocks
+                </p>
+                <img src="./images/icon-supervisor.svg" alt="Supervisor icon" class="w-[57px] h-[57px] ml-auto">
+            </div>
         </div>
 
-      </div>
-    </article>
-
-    <div class="row row-cols-1 row-cols-md-3 g-3 align-items-center">
-
-      <div class="col">
-        <div class="card border-0 border-top border-cyan shadow">
-          <div class="card-body">
-            <h5 class="card-title">Supervisor</h5>
-            <p class="card-text">Monitors activity to identify project roadblocks</p>
-            <div class="row">
-              <div class="col-auto ms-auto">
-                <img src="./images/icon-supervisor.svg" alt="Supervisor icon">
-              </div>
+        <div class="flex flex-col items-center space-y-[25px]">
+            <div class="bg-white rounded-lg border-t-4 border-red p-7 shadow-card max-w-[300px]">
+                <h3 class="font-semibold text-[20px] mb-px">Team Builder</h3>
+                <p class="text-[13px] leading-[23px] tracking-[.09px] opacity-50 mb-[33px]">
+                    Scans our talent network to create the optimal team for your project
+                </p>
+                <img src="./images/icon-team-builder.svg" alt="Team Builder icon" class="w-[57px] h-[57px] ml-auto">
             </div>
-          </div>
+
+            <div class="bg-white rounded-lg border-t-4 border-orange p-7 shadow-card max-w-[300px]">
+                <h3 class="font-semibold text-[20px] mb-px">Karma</h3>
+                <p class="text-[13px] leading-[23px] tracking-[.09px] opacity-50 mb-[33px]">
+                    Regularly evaluates our talent to ensure quality
+                </p>
+                <img src="./images/icon-karma.svg" alt="Karma icon" class="w-[57px] h-[57px] ml-auto">
+            </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="row row-cols-1 g-3">
-          <div class="col">
-            <div class="card border-0 border-top border-red shadow">
-              <div class="card-body">
-                <h5 class="card-title">Team Builder</h5>
-                <p class="card-text">Scans our talent network to create the optimal team for your project</p>
-                <div class="row">
-                  <div class="col-auto ms-auto">
-                    <img src="./images/icon-team-builder.svg" alt="Team builder icon">
-                  </div>
-                </div>
-              </div>
+        <div class="flex justify-center items-center">
+            <div class="bg-white rounded-lg border-t-4 border-blue p-7 shadow-card max-w-[300px]">
+                <h3 class="font-semibold text-[20px] mb-px">Calculator</h3>
+                <p class="text-[13px] leading-[23px] tracking-[.09px] opacity-50 mb-[33px]">
+                    Uses data from past projects to provide better delivery estimates
+                </p>
+                <img src="./images/icon-calculator.svg" alt="Calculator icon" class="w-[57px] h-[57px] ml-auto">
             </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 border-top border-orange shadow">
-              <div class="card-body">
-                <h5 class="card-title">Karma</h5>
-                <p class="card-text">Regularly evaluates our talent to ensure quality</p>
-                <div class="row">
-                  <div class="col-auto ms-auto">
-                    <img src="./images/icon-karma.svg" alt="Karma icon">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="card border-0 border-top border-blue shadow">
-          <div class="card-body">
-            <h5 class="card-title">Calculator</h5>
-            <p class="card-text">Uses data from past projects to provide better delivery estimates</p>
-            <div class="row">
-              <div class="col-auto ms-auto">
-                <img src="./images/icon-calculator.svg" alt="Calculator icon">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 </body>
 
 </html>
